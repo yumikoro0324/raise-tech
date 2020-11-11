@@ -1,0 +1,237 @@
+//main:../style.scss
+
+.gnav{
+  display: flex;
+  flex-direction: column;
+  float: right;
+  width:25%;
+  height: 300vh;
+  background-color: #F2EDE9;
+  padding-left: 20px;
+  h2 {
+    color: #707070;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .menu-list{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+  }
+}
+@include mq('pc'){
+.gnav_tab{
+      display: none;
+    }
+}
+
+
+@include mq('tab'){
+  .gnav{
+    display: none;
+  }
+// only showing when drawer menu hidden
+  h2.ham-menu{
+    display : block;
+    position: fixed;
+    z-index : 0;
+    right : 13px;
+    top   : 12px;
+    width : 90px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+    color: #707070;
+  }
+  .hamburger{
+          display : block;
+          position: fixed;
+          z-index : 3;
+          right : 13px;
+          top   : 12px;
+          width : 42px;
+          height: 42px;
+          cursor: pointer;
+          text-align: center;
+      }
+      .hamburger span{
+        display : block;
+        position: absolute;
+        width   : 30px;
+        height  : 2px ;
+        left    : 6px;
+        background :white;
+        opacity: 0;
+        -webkit-transition: 0.3s ease-in-out;
+        -moz-transition   : 0.3s ease-in-out;
+        transition        : 0.3s ease-in-out;
+
+      &:nth-child(2) {
+        top: 10px;
+      }
+      &:nth-child(3) {
+        top: 30px;
+      }
+    }
+.globalMenuSp {
+  position: fixed;
+  z-index : 2;
+  top  : 0;
+  right : 0;
+  color: #000;
+  text-align: center;
+  background-color: #F2EDE9;
+  min-height: 220vh;
+  transform: translateX(100%);
+  transition: all 0.6s;
+  width: 50%;
+  }
+.globalMenuSp ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+.globalMenuSp ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+  }
+.globalMenuSp ul li:hover{
+    background :#ddd;
+  }
+
+  /* when actvive by clicking the menu button*/
+.globalMenuSp.active {
+    transform: translateX(0%);
+  }
+.hamburger.active span:nth-child(2) {
+  top : 16px;
+  left: 6px;
+  background : #555;
+  opacity: 1;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform   : rotate(-45deg);
+  transform        : rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(3) {
+  top: 16px;
+  background : #555;
+  opacity: 1;
+  -webkit-transform: rotate(45deg);
+  -moz-transform   : rotate(45deg);
+  transform        : rotate(45deg);
+}
+
+.hamburger.active h2{
+      display : none;
+    }
+
+
+  } //div tab
+
+
+  @include mq('sp'){
+    .gnav{
+      display: none;
+    }
+  // only showing when drawer menu hidden
+    h2.ham-menu{
+      display : block;
+      position: fixed;
+      z-index : 0;
+      right : 13px;
+      top   : 12px;
+      width : 40px;
+      height: 20px;
+      cursor: pointer;
+      text-align: center;
+      color: #707070;
+      font-size: 1.3rem;
+    }
+    .hamburger{
+            display : block;
+            position: fixed;
+            z-index : 3;
+            right : 5px;
+            top   : 5px;
+            width : 21px;
+            height: 21px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .hamburger span{
+          display : block;
+          position: absolute;
+          width   : 15px;
+          height  : 2px ;
+          left    : 3px;
+          background :white;
+          opacity: 0;
+          -webkit-transition: 0.3s ease-in-out;
+          -moz-transition   : 0.3s ease-in-out;
+          transition        : 0.3s ease-in-out;
+
+        &:nth-child(2) {
+          top: 0px;
+        }
+        &:nth-child(3) {
+          top: 3px;
+        }
+      }
+  .globalMenuSp {
+    position: fixed;
+    z-index : 2;
+    top  : 0;
+    right : 0;
+    color: #000;
+    text-align: center;
+    background-color: #F2EDE9;
+    min-height: 220vh;
+    transform: translateX(100%);
+    transition: all 0.6s;
+    width: 50%;
+    }
+  .globalMenuSp ul {
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+    }
+  .globalMenuSp ul li {
+      list-style-type: none;
+      padding: 0;
+      width: 100%;
+    }
+  .globalMenuSp ul li:hover{
+      background :#ddd;
+    }
+
+    /* when actvive by clicking the menu button*/
+  .globalMenuSp.active {
+      transform: translateX(0%);
+    }
+  .hamburger.active span:nth-child(2) {
+    top : 8px;
+    left: 3px;
+    background : #555;
+    opacity: 1;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg);
+    transform        : rotate(-45deg);
+  }
+
+  .hamburger.active span:nth-child(3) {
+    top: 8px;
+    background : #555;
+    opacity: 1;
+    -webkit-transform: rotate(45deg);
+    -moz-transform   : rotate(45deg);
+    transform        : rotate(45deg);
+  }
+
+  .hamburger.active h2{
+        display : none;
+      }
+
+
+    } //div sp

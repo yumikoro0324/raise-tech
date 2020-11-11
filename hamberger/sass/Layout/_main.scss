@@ -1,0 +1,113 @@
+//main:../style.scss
+main{
+  width: 75%;
+}
+
+.main-1{
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+  p{
+    position:absolute;
+    top:50%;
+    left:10%;
+  }
+}
+.main-2{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  .main-2-2{
+    width: 43%;
+    height: inherit;
+    position: relative;
+    h4{
+      color: white;
+      font-size: 5rem;
+      position: absolute;
+      top:5px;
+      left:8px;
+    }
+    .komidashi{
+      position: absolute;
+      bottom: 40px;
+      left:5%;
+      background-color: white;
+      opacity: 0.5;
+      width: 90%;
+    }
+  }
+}
+.main-3{
+  display:flex;
+  position: relative;
+  iframe{
+  width: 100%;
+        }
+  &-cover{
+  position: absolute;
+  left:0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 0.7;
+  }
+  .komidashi-main3{
+    position: absolute;
+    left:25%;
+    top:25%;
+    width: 50%;
+    &-title{
+      color: white;
+    }
+    &-content{
+      color: white;
+      overflow-wrap: break-word;
+　　　word-wrap: break-word;
+    }
+  }
+}
+
+
+@include mq('tab'){
+  main{
+    width: 100%;
+  }
+
+
+} //mq tab
+
+
+@include mq('sp'){
+  main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .main-2-2{
+      width: 100%;
+      height: inherit;
+      position: relative;
+      h4{
+        color: white;
+        font-size: 5rem;
+        position: absolute;
+        top:5px;
+        left:8px;
+      }
+      .komidashi{
+        position: absolute;
+        bottom: 40px;
+        left:5%;
+        background-color: white;
+        opacity: 0.5;
+        width: 90%;
+      }
+    }
+  }
+} //mq tab
