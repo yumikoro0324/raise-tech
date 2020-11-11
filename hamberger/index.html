@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="format-detection" content="telephone=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!--　未設定 <link rel="icon" type="image/png" href="fav.png" /> -->
+<!-- 未設定 　<link rel="apple-touch-icon" sizes="180x180" href="icon.png" /> -->
+<title>ハンバーガーサイト</title>
+<link rel="stylesheet" href="css/style.css">
+<meta name="description"  content="ハンバーガーメニュー"/>
+<meta name="author" content="Yumiko Naka"/>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(function() {
+    $('.hamburger').click(function() {
+        $(this).toggleClass('active');
+
+        if ($(this).hasClass('active')) {
+            $('.globalMenuSp').addClass('active');
+        } else {
+            $('.globalMenuSp').removeClass('active');
+        }
+    });
+});
+
+// $(function() {
+//   alert("jQueryが正常に動作しています！");
+// });
+</script>
+</head>
+
+<body>
+<header class="header">
+  <h1>Humburger</h1>
+  <div class="search-bar">
+    <form method=”get” action=http://www.google.co.jp/search target=”_blank”>
+    <input type=”text” class="text" name="query" size="30" maxlength="255" value="">
+    <input type=”submit” class="submit" name="search-btn" value="検索">
+    <input type="hidden" name="hl" value="ja">
+    <input type="hidden" name="sitesearch" value="xxxxx.co.jp">
+    </form>
+  </div>
+
+<nav class="gnav">
+  <h2>Menu</h2>
+  <div class="menu-content">
+    <h3>バーガー</h3>
+     <ul class="menu-list">
+       <li>ハンバーガー</li>
+       <li>チーズバーガー</li>
+       <li>テリヤキバーガー</li>
+       <li>アボガドバーガー</li>
+       <li>フィッシュバーガー</li>
+       <li>ベーコンバーガー</li>
+       <li>チキンバーガー</li>
+    </ul>
+  </div>
+  <div class="menu-content">
+    <h3>サイド</h3>
+     <ul class="menu-list">
+       <li>ポテト</li>
+       <li>サラダ</li>
+       <li>ナゲット</li>
+       <li>コーン</li>
+    </ul>
+  </div>
+  <div class="menu-content">
+    <h3>ドリンク</h3>
+     <ul class="menu-list">
+       <li>コーラ</li>
+       <li>ファンタ</li>
+       <li>オレンジ</li>
+       <li>アップル</li>
+       <li>紅茶(Hot/Ice)</li>
+       <li>コーヒー(Hot/Ice)</li>
+    </ul>
+  </div>
+</nav>
+</header>
+
+<!-- tablet and mobile nav menu-->
+<nav class="gnav_tab">
+
+  <div class="hamburger">
+          <h2 class="ham-menu">Menu</h2>
+          <span></span>
+          <span></span>
+  </div>
+  <div class="globalMenuSp">
+    <div class="menu-content">
+      <h3>バーガー</h3>
+       <ul class="menu-list">
+         <li>ハンバーガー</li>
+         <li>チーズバーガー</li>
+         <li>テリヤキバーガー</li>
+         <li>アボガドバーガー</li>
+         <li>フィッシュバーガー</li>
+         <li>ベーコンバーガー</li>
+         <li>チキンバーガー</li>
+      </ul>
+    </div>
+    <div class="menu-content">
+      <h3>サイド</h3>
+       <ul class="menu-list">
+         <li>ポテト</li>
+         <li>サラダ</li>
+         <li>ナゲット</li>
+         <li>コーン</li>
+      </ul>
+    </div>
+    <div class="menu-content">
+      <h3>ドリンク</h3>
+       <ul class="menu-list">
+         <li>コーラ</li>
+         <li>ファンタ</li>
+         <li>オレンジ</li>
+         <li>アップル</li>
+         <li>紅茶(Hot/Ice)</li>
+         <li>コーヒー(Hot/Ice)</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<main>
+<div class="main-1">
+  <img src="./images/top/top1.png" alt="top1">
+  <p>ダミーサイト</p>
+</div>
+<div class="main-2">
+  <div class="main-2-2">
+    <img class="main-left"src="./images/top/takeout.png" alt="takeout">
+    <h4>Take Out</h4>
+    <div class="komidashi">
+      <p class="komi-title">小見出しが入ります</p></br>
+      <p class="komi-content">小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります</p>
+    </div>
+  </div>
+  <div class="main-2-2">
+    <img class="main-left"src="./images/top/eat in.png" alt="takeout">
+    <h4>Eat In</h4>
+    <div class="komidashi">
+      <p class="komi-title">小見出しが入ります</p></br>
+      <p class="komi-content">小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります</p>
+    </div>
+  </div>
+
+</div>
+<div class="main-3">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.7479754683745!2d139.7432442152582!3d35.65858048019946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bbd9009ec09%3A0x481a93f0d2a409dd!2z5p2x5Lqs44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1604337558531!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">  </iframe>
+  <div class="main-3-cover">
+    <div class="komidashi-main3">
+      <p class="komidashi-main3-title">小見出しが入ります</p></br>
+      <p class="komidashi-main3-content">小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります小見出しが入ります</p>
+    </div>
+
+</div>
+
+
+</main>
+
+<footer class="footer">
+<div class=footer-block>
+  <p class="shop">ショップ情報</p><span> | </span><p class="history">ヒストリー</p><br>
+</div>
+<div class="footer-copyright">Copyright: RaiseTech</div>
+
+</footer>
+
+</body>
+</html>
